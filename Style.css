@@ -1,0 +1,90 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h1{
+    font-family: monospace;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.wrapper .container .grid-col{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    padding: 0rem 5%;
+    list-style-type: none;
+    margin: 0%;
+}
+
+.wrapper .container .grid-col a img{
+    width: 100%;
+}
+
+
+/*  preview content  */
+
+.wrapper .container .data-content{
+    position: relative;
+}
+
+.wrapper .container .tabcontent{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    margin: 1% 5%;
+    display: none;
+    height: 0;
+    max-height: 30rem;
+    transition: height .7s ease-in;
+}
+
+.wrapper .container .tabcontent .blog-content{
+    display: flex;
+    flex-direction: row;
+    background: lightblue;
+    padding: 2rem;
+}
+
+.container .tabcontent .title{
+    padding: 0 3rem;
+}
+
+.container .tabcontent .title h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container .tabcontent .title p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .tabcontent .blog-content button{
+    padding: .5rem 2rem;
+    border: 3px solid black;
+    background: transparent;
+    border-radius: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container .tabcontent .blog-content span{
+    padding: .3rem 1rem;
+    color: tomato;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.active{
+    display: block !important;
+}
